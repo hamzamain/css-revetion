@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>custom,var</title>
+    <style>
+      :root {
+        --border-color: 2px solid red;
+        --paragraph-bgc: powderblue;
+        --side-bar: 50%;
+      }
+      h1 {
+        /* border: var(--border-color); */
+      }
+      p {
+        background-color: var(--paragraph-bgc);
+      }
+      .side-nav,
+      .secend {
+        float: left;
+        height: 500px;
+      }
+      .last {
+        clear: both;
+      }
+      aside {
+        background-color: chartreuse;
+        width: var(--side-bar);
+      }
+      .secend {
+        background-color: tomato;
+        width: calc(100% - var(--side-bar));
+      }
+      section.h1s {
+        display: flex;
+      }
+      .first,
+      .secend {
+        height: 500px;
+      }
+      .first {
+        background-color: darkgreen;
+        width: calc(100% - 50%);
+      }
+      secend {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="h1s">
+      <h1 class="first">hello</h1>
+      <h1 class="secend">world</h1>
+    </section>
+    <br /><br />
+    <section>
+      <aside class="side-nav">my side navigation</aside>
+      <div class="blogs">
+        <h4>Blogs</h4>
+      </div>
+    </section>
+    <section class="last">
+      <h1>hello world</h1>
+      <p>how are</p>
+      <h2>amar shonar bangla ami tomay valo bashi</h2>
+      <p>
+        amar shonar bangla ami tomay balo bashi chirodin tomar akash tomar
+        batash amara prane omay amar prane bajay bashi shonar bangla ami tomay
+        valo bahi
+      </p>
+    </section>
+  </body>
+</html>

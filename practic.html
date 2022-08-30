@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practic</title>
+    <style>
+      .first {
+        clear: both;
+      }
+      aside,
+      .f-h1 {
+        float: left;
+        height: 500px;
+      }
+      aside {
+        width: 200px;
+        background-color: green;
+        color: white;
+      }
+      .f-h1 {
+        width: calc(100% - 200px);
+        background-color: red;
+      }
+      nav > ul a {
+        text-decoration: none;
+        padding: 20px;
+        font-size: 25px;
+        color: white;
+      }
+      nav > ul,
+      .dropdown {
+        list-style: none;
+        display: flex;
+        position: absolute;
+        padding: 0;
+      }
+      .dropdown {
+        display: none;
+      }
+      nav > ul > li:hover > div > ul.dropdown {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">home</a></li>
+          <li>
+            <a href="">table</a>
+            <div class="table">
+              <ul class="dropdown">
+                <li><a href="">table-link-1</a></li>
+                <li><a href="">table-link-2</a></li>
+                <li><a href="">table-link-3</a></li>
+                <li><a href="">table-link-4</a></li>
+                <li><a href="">table-link-5</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="">course</a>
+            <div class="course">
+              <ul class="dropdown">
+                <li><a href="">course-link-1</a></li>
+                <li><a href="">course-link-2</a></li>
+                <li><a href="">course-link-3</a></li>
+                <li><a href="">course-link-4</a></li>
+                <li><a href="">course-link-5</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="">label</a>
+            <div class="label">
+              <ul class="dropdown">
+                <li><a href="">label-link-1</a></li>
+                <li><a href="">label-link-2</a></li>
+                <li><a href="">label-link-3</a></li>
+                <li><a href="">label-link-4</a></li>
+                <li><a href="">label-link-5</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="">about us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="first">
+      <aside>this is aside</aside>
+      <div class="f-h1">
+        <h1>this is header</h1>
+      </div>
+    </section>
+    <footer>
+      <p><small>this small paragraph</small></p>
+    </footer>
+  </body>
+</html>
